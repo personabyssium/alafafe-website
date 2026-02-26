@@ -1,0 +1,117 @@
+<script type="module" src="/src/main.js"></script>
+<div class="container mx-auto flex justify-between items-center">
+    <div class="flex items-center gap-2">
+        <a href="index.html" class="flex items-center gap-2">
+            <div class="w-10 h-10 bg-emerald-900 rounded-lg flex items-center justify-center text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
+                </svg>
+            </div>
+            <span class="text-2xl font-bold text-emerald-900 tracking-tight">ALAFEFE</span>
+        </a>
+    </div>
+
+    <nav class="hidden lg:flex items-center gap-8 font-medium">
+        <a href="index.html" data-nav="home" data-i18n="nav_home"
+            class="hover:text-emerald-900 transition-colors">Accueil</a>
+        <a href="particuliers.html" data-nav="particuliers" data-i18n="nav_partic"
+            class="hover:text-emerald-900 transition-colors">Particuliers</a>
+        <a href="entreprise.html" data-nav="entreprise" data-i18n="nav_corp"
+            class="hover:text-emerald-900 transition-colors">Entreprise</a>
+        <a href="sinistres.html" data-nav="sinistres" data-i18n="nav_sinistre"
+            class="hover:text-emerald-900 transition-colors">Sinistres</a>
+        <a href="about.html" data-nav="about" data-i18n="nav_about" class="hover:text-emerald-900 transition-colors">À
+            Propos</a>
+        <a href="contact.html" data-nav="contact" data-i18n="nav_contact"
+            class="hover:text-emerald-900 transition-colors">Contact</a>
+    </nav>
+
+    <div class="flex items-center gap-4">
+        <!-- Desktop Language Switcher -->
+        <div
+            class="hidden lg:flex items-center gap-2 px-3 py-1 rounded bg-slate-100 text-sm font-bold cursor-pointer hover:bg-slate-200 transition-colors">
+            <span class="text-slate-400 lang-fr-btn">FR</span> <span class="text-slate-200">|</span>
+            <span class="hover:text-emerald-900 lang-ar-btn">AR</span>
+        </div>
+        <!-- Desktop Emergency CTA -->
+        <button onclick="window.location.href='sinistres.html'"
+            class="hidden lg:flex items-center gap-2 bg-emerald-900 text-white px-5 py-2.5 rounded-xl font-medium hover:bg-emerald-800 transition-all shadow-lg shadow-emerald-900/10">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            <span data-i18n="btn_emergency">Urgence Sinistre</span>
+        </button>
+
+        <!-- Hamburger Button -->
+        <button id="mobile-menu-open"
+            class="lg:hidden p-2 text-emerald-900 hover:bg-slate-100 rounded-lg transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="4" x2="20" y1="12" y2="12" />
+                <line x1="4" x2="20" y1="6" y2="6" />
+                <line x1="4" x2="20" y1="18" y2="18" />
+            </svg>
+        </button>
+    </div>
+</div>
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu"
+    class="fixed inset-0 z-[100] bg-white transform translate-x-full transition-transform duration-300 ease-in-out lg:hidden">
+    <!-- Header inside menu -->
+    <div class="p-6 border-b border-silver/50 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <div class="w-10 h-10 bg-emerald-900 rounded-lg flex items-center justify-center text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
+                </svg>
+            </div>
+            <span class="text-2xl font-bold text-emerald-900 tracking-tight">ALAFEFE</span>
+        </div>
+        <button id="mobile-menu-close" class="p-2 text-emerald-900 hover:bg-slate-100 rounded-lg transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 6 6 18" />
+                <path d="m6 6 12 12" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- Links -->
+    <nav class="p-8 flex flex-col gap-8 text-xl font-bold">
+        <a href="index.html" data-nav="home" data-i18n="nav_home" class="hover:text-emerald-900">Accueil</a>
+        <a href="particuliers.html" data-nav="particuliers" data-i18n="nav_partic"
+            class="hover:text-emerald-900">Particuliers</a>
+        <a href="entreprise.html" data-nav="entreprise" data-i18n="nav_corp"
+            class="hover:text-emerald-900">Entreprise</a>
+        <a href="sinistres.html" data-nav="sinistres" data-i18n="nav_sinistre"
+            class="hover:text-emerald-900">Sinistres</a>
+        <a href="about.html" data-nav="about" data-i18n="nav_about" class="hover:text-emerald-900">À Propos</a>
+        <a href="contact.html" data-nav="contact" data-i18n="nav_contact" class="hover:text-emerald-900">Contact</a>
+    </nav>
+
+    <!-- Bottom actions -->
+    <div class="absolute bottom-0 left-0 right-0 p-8 bg-slate-50 flex flex-col gap-6">
+        <div class="flex items-center justify-between">
+            <span class="text-slate-500 font-medium">Langue / Choose Language</span>
+            <div class="flex items-center gap-4 text-lg font-bold">
+                <span class="cursor-pointer lang-fr-btn" id="m-lang-fr">FR</span>
+                <span class="text-slate-200">|</span>
+                <span class="cursor-pointer lang-ar-btn" id="m-lang-ar">AR</span>
+            </div>
+        </div>
+        <button onclick="window.location.href='sinistres.html'"
+            class="w-full flex items-center justify-center gap-3 bg-emerald-900 text-white py-4 rounded-2xl font-bold shadow-xl">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            <span data-i18n="btn_emergency">Urgence Sinistre</span>
+        </button>
+    </div>
+</div>

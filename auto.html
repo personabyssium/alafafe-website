@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assurance Auto Maroc | Devis en ligne - Alafafe Assurances</title>
+    <meta name="description"
+        content="Obtenez le meilleur prix pour votre assurance auto au Maroc. Garanties sur mesure, assistance 24h/7 et gestion rapide des sinistres par Alafafe.">
+    <meta name="keywords"
+        content="assurance auto maroc, prix assurance voiture maroc, courtier auto casablanca, assurance voiture sur mesure">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: {
+                            900: '#004D3F',
+                            800: '#006B57',
+                        },
+                        slate: {
+                            900: '#0F172A',
+                            800: '#1E293B',
+                        },
+                        silver: '#E2E8F0',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .btn-primary {
+            background-color: #004D3F;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-primary:hover {
+            background-color: #006B57;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-slate-900 antialiased font-sans">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white border-b border-silver/50 p-4">
+        <!-- @include header -->
+    </header>
+
+    <!-- Page Content -->
+    <main>
+        <!-- Hero Service -->
+        <section class="py-16 bg-slate-50 border-b border-silver/50">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row gap-12 items-center">
+                    <div class="md:w-1/2">
+                        <div
+                            class="inline-flex items-center gap-2 bg-emerald-100 text-emerald-900 px-3 py-1 rounded-full text-sm font-bold mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <polyline points="12 6 12 12 16 14" />
+                            </svg>
+                            Devis en 2 minutes
+                        </div>
+                        <h1 class="text-4xl lg:text-5xl font-bold mb-6">Assurance Auto sur mesure au Maroc</h1>
+                        <p class="text-xl text-slate-600 mb-8 leading-relaxed">
+                            Bénéficiez d'une protection complète pour votre véhicule avec des garanties adaptées à votre
+                            budget et à vos besoins réels.
+                        </p>
+                        <ul class="space-y-4 mb-8 text-slate-700">
+                            <li class="flex items-start gap-3">
+                                <svg class="text-emerald-500 mt-1" xmlns="http://www.w3.org/2000/svg" width="20"
+                                    height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                                <span>Responsabilité Civile obligatoire au meilleur prix.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="text-emerald-500 mt-1" xmlns="http://www.w3.org/2000/svg" width="20"
+                                    height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                                <span>Assistance 24h/24 et 7j/7 partout au Royaume.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg class="text-emerald-500 mt-1" xmlns="http://www.w3.org/2000/svg" width="20"
+                                    height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg>
+                                <span>Garanties vol, incendie et dommages collision.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/2">
+                        <!-- Unified Quote Engine Container -->
+                        <div id="quote-engine-container"
+                            class="bg-white p-8 rounded-2xl shadow-2xl border border-silver/50 min-h-[500px]">
+                            <h2 class="text-2xl font-bold mb-6">Obtenez votre devis</h2>
+                            <div class="flex items-center justify-center py-12">
+                                <div
+                                    class="w-8 h-8 border-4 border-emerald-900 border-t-transparent rounded-full animate-spin">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Netlify Discovery Form (Hidden) -->
+                        <form name="quote-auto" data-netlify="true" netlify-honeypot="bot-field" hidden>
+                            <input type="text" name="bot-field" />
+                            <input type="text" name="marque" />
+                            <input type="number" name="annee" />
+                            <input type="text" name="puissance" />
+                            <input type="text" name="usage" />
+                            <input type="text" name="formule" />
+                            <input type="text" name="nom" />
+                            <input type="email" name="email" />
+                            <input type="tel" name="phone" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Details Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-4">
+                <div class="max-w-3xl">
+                    <h2 class="text-3xl font-bold mb-10">Pourquoi choisir Alafafe pour votre auto ?</h2>
+                    <div class="space-y-12">
+                        <div class="flex gap-6">
+                            <div
+                                class="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center shrink-0 text-emerald-900">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Conseil d'expert indépendant</h3>
+                                <p class="text-slate-500 leading-relaxed">En tant que courtier, nous ne sommes pas liés
+                                    à une seule compagnie. Nous comparons pour vous les offres de plus de 10 assureurs
+                                    au Maroc pour trouver le meilleur rapport qualité/prix.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <div
+                                class="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center shrink-0 text-emerald-900">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M12 2v20" />
+                                    <path d="m17 12-5 5-5-5" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Gestion sinistre simplifiée</h3>
+                                <p class="text-slate-500 leading-relaxed">En cas d'accident, nous prenons tout en
+                                    charge. De la déclaration à l'expertise technique, notre équipe dédiée vous
+                                    accompagne pour une indemnisation rapide.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white pt-20 pb-10">
+        <!-- @include footer -->
+    </footer>
+</body>
+
+</html>

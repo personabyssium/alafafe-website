@@ -1,0 +1,325 @@
+{
+    "auto": {
+        "title": "Assurance Auto",
+        "description": "Obtenez un devis précis en 3 étapes simples.",
+        "steps": [
+            {
+                "id": "vehicle_info",
+                "label": "Votre Véhicule",
+                "fields": [
+                    {
+                        "name": "marque",
+                        "type": "select",
+                        "label": "Marque",
+                        "options": [
+                            "Dacia",
+                            "Renault",
+                            "Peugeot",
+                            "Volkswagen",
+                            "Autre"
+                        ],
+                        "required": true
+                    },
+                    {
+                        "name": "annee",
+                        "type": "number",
+                        "label": "Année",
+                        "placeholder": "Ex: 2022",
+                        "required": true
+                    },
+                    {
+                        "name": "puissance",
+                        "type": "select",
+                        "label": "Puissance Fiscale",
+                        "options": [
+                            "6 CV",
+                            "7 CV",
+                            "8 CV",
+                            "9 CV+"
+                        ],
+                        "required": true
+                    }
+                ]
+            },
+            {
+                "id": "usage_info",
+                "label": "Usage & Garanties",
+                "fields": [
+                    {
+                        "name": "usage",
+                        "type": "select",
+                        "label": "Usage du véhicule",
+                        "options": [
+                            "Privé",
+                            "Professionnel",
+                            "Mixte"
+                        ],
+                        "required": true
+                    },
+                    {
+                        "name": "formule",
+                        "type": "radio",
+                        "label": "Formule souhaitée",
+                        "options": [
+                            "Tiers Simple",
+                            "Tiers Plus",
+                            "Tous Risques"
+                        ],
+                        "required": true
+                    }
+                ]
+            },
+            {
+                "id": "contact_info",
+                "label": "Coordonnées",
+                "fields": [
+                    {
+                        "name": "nom",
+                        "type": "text",
+                        "label": "Nom complet",
+                        "placeholder": "Votre nom",
+                        "required": true
+                    },
+                    {
+                        "name": "email",
+                        "type": "email",
+                        "label": "Email",
+                        "placeholder": "exemple@mail.com",
+                        "required": true
+                    },
+                    {
+                        "name": "phone",
+                        "type": "tel",
+                        "label": "Téléphone (+212)",
+                        "placeholder": "6 00 00 00 00",
+                        "required": true
+                    }
+                ]
+            }
+        ]
+    },
+    "habitation": {
+        "title": "Assurance Habitation",
+        "steps": [
+            {
+                "id": "home_info",
+                "label": "Votre Logement",
+                "fields": [
+                    {
+                        "name": "type_logement",
+                        "type": "select",
+                        "label": "Type de logement",
+                        "options": [
+                            "Appartement",
+                            "Villa",
+                            "Maison Traditionnelle"
+                        ],
+                        "required": true
+                    },
+                    {
+                        "name": "statut",
+                        "type": "select",
+                        "label": "Vous êtes",
+                        "options": [
+                            "Propriétaire",
+                            "Locataire"
+                        ],
+                        "required": true
+                    },
+                    {
+                        "name": "pieces",
+                        "type": "number",
+                        "label": "Nombre de pièces",
+                        "placeholder": "Ex: 3",
+                        "required": true
+                    }
+                ]
+            },
+            {
+                "id": "capital_info",
+                "label": "Valeurs à Garantir",
+                "fields": [
+                    {
+                        "name": "capital_mobilier",
+                        "type": "select",
+                        "label": "Capital mobilier estimé",
+                        "options": [
+                            "Moins de 50k MAD",
+                            "50k - 100k MAD",
+                            "Plus de 100k MAD"
+                        ],
+                        "required": true
+                    }
+                ]
+            },
+            {
+                "id": "contact_info",
+                "label": "Coordonnées",
+                "fields": [
+                    {
+                        "name": "nom",
+                        "type": "text",
+                        "label": "Nom complet",
+                        "required": true
+                    },
+                    {
+                        "name": "phone",
+                        "type": "tel",
+                        "label": "Téléphone",
+                        "required": true
+                    }
+                ]
+            }
+        ]
+    },
+    "sante": {
+        "title": "Assurance Santé",
+        "steps": [
+            {
+                "id": "person_info",
+                "label": "Bénéficiaires",
+                "fields": [
+                    {
+                        "name": "pour_qui",
+                        "type": "select",
+                        "label": "Assurance pour",
+                        "options": [
+                            "Individuel",
+                            "Couple",
+                            "Famille"
+                        ],
+                        "required": true
+                    },
+                    {
+                        "name": "age_principal",
+                        "type": "number",
+                        "label": "Âge de l'assuré principal",
+                        "required": true
+                    }
+                ]
+            },
+            {
+                "id": "contact_info",
+                "label": "Coordonnées",
+                "fields": [
+                    {
+                        "name": "nom",
+                        "type": "text",
+                        "label": "Nom complet",
+                        "required": true
+                    },
+                    {
+                        "name": "phone",
+                        "type": "tel",
+                        "label": "Téléphone",
+                        "required": true
+                    }
+                ]
+            }
+        ]
+    },
+    "voyage": {
+        "title": "Assurance Voyage",
+        "steps": [
+            {
+                "id": "trip_info",
+                "label": "Votre Voyage",
+                "fields": [
+                    {
+                        "name": "destination",
+                        "type": "select",
+                        "label": "Destination",
+                        "options": [
+                            "Schengen",
+                            "Monde entier",
+                            "Omra/Haj"
+                        ],
+                        "required": true
+                    },
+                    {
+                        "name": "duree",
+                        "type": "select",
+                        "label": "Durée",
+                        "options": [
+                            "Moins de 15 jours",
+                            "jusqu'à 92 jours",
+                            "Annuel"
+                        ],
+                        "required": true
+                    }
+                ]
+            },
+            {
+                "id": "contact_info",
+                "label": "Coordonnées",
+                "fields": [
+                    {
+                        "name": "nom",
+                        "type": "text",
+                        "label": "Nom complet",
+                        "required": true
+                    },
+                    {
+                        "name": "phone",
+                        "type": "tel",
+                        "label": "Téléphone",
+                        "required": true
+                    }
+                ]
+            }
+        ]
+    },
+    "prevoyance": {
+        "title": "Assurance Prévoyance",
+        "steps": [
+            {
+                "id": "protection_info",
+                "label": "Votre Protection",
+                "fields": [
+                    {
+                        "name": "type_prevoyance",
+                        "type": "select",
+                        "label": "Nature du projet",
+                        "options": [
+                            "Capital Décès",
+                            "Indemnités Journalières",
+                            "Rente Éducation",
+                            "Obsèques"
+                        ],
+                        "required": true
+                    },
+                    {
+                        "name": "capital_souhaite",
+                        "type": "select",
+                        "label": "Capital souhaité",
+                        "options": [
+                            "100 000 MAD",
+                            "250 000 MAD",
+                            "500 000 MAD",
+                            "1 000 000 MAD+"
+                        ],
+                        "required": true
+                    }
+                ]
+            },
+            {
+                "id": "contact_info",
+                "label": "Coordonnées",
+                "fields": [
+                    {
+                        "name": "nom",
+                        "type": "text",
+                        "label": "Nom complet",
+                        "required": true
+                    },
+                    {
+                        "name": "phone",
+                        "type": "tel",
+                        "label": "Téléphone",
+                        "required": true
+                    }
+                ]
+            }
+        ]
+    }
+}

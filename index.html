@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alafafe Assurances | Courtage & Conseil en Assurances au Maroc</title>
+    <meta name="description"
+        content="Alafafe, votre courtier d'assurance de confiance à Casablanca. Solutions sur mesure pour particuliers et entreprises : Auto, Habitation, Santé et Risques Pro. Proximité et réactivité garanties.">
+    <meta name="keywords"
+        content="assurance maroc, courtier assurance casablanca, assurance auto maroc, alafafe assurance, assurance santé maroc, assurance entreprise maroc">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alafafe.ma/">
+    <meta property="og:title" content="Alafafe Assurances | Expertise & Conseil au Maroc">
+    <meta property="og:description"
+        content="Découvrez nos solutions d'assurance innovantes et bénéficiez d'un accompagnement personnalisé par nos experts à Casablanca.">
+    <meta property="og:image" content="https://alafafe.ma/og-image.jpg">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: {
+                            900: '#004D3F',
+                            800: '#006B57',
+                        },
+                        slate: {
+                            900: '#0F172A',
+                            800: '#1E293B',
+                        },
+                        silver: '#E2E8F0',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .btn-primary {
+            @apply bg-emerald-900 text-white px-6 py-3 rounded-lg font-medium transition-all hover:bg-emerald-800 active:scale-95 shadow-lg;
+        }
+
+        .btn-outline {
+            @apply border-2 border-emerald-900 text-emerald-900 px-6 py-3 rounded-lg font-medium transition-all hover:bg-emerald-50 active:scale-95;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(226, 232, 240, 0.5);
+            border-radius: 1rem;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-slate-900 antialiased font-sans">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white border-b border-silver/50 p-4">
+        <!-- @include header -->
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-20 lg:py-32 overflow-hidden">
+        <div class="container mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <h1 class="text-5xl lg:text-7xl font-bold text-slate-900 leading-tight mb-6">
+                    Votre Partenaire en <br><span class="text-emerald-900">Confiance & Protection</span>
+                </h1>
+                <p class="text-xl text-slate-600 mb-8 max-w-lg leading-relaxed">
+                    Alafafe vous accompagne avec des solutions d'assurance sur mesure, pensées pour les besoins uniques
+                    des Marocains.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <button
+                        class="bg-emerald-900 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-emerald-800 transition-all flex items-center gap-2 shadow-xl hover:-translate-y-1">
+                        Demander un devis
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m9 18 6-6-6-6" />
+                        </svg>
+                    </button>
+                    <button onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})"
+                        class="border-2 border-emerald-900 text-emerald-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-emerald-50 transition-all">
+                        Nos services
+                    </button>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="w-full h-[500px] bg-slate-100 rounded-[3rem] overflow-hidden relative shadow-2xl skew-y-1">
+                    <img src="https://images.unsplash.com/photo-1577416414929-7a4c751ee21e?auto=format&fit=crop&q=80&w=1000"
+                        alt="Corporate Casablanca" class="w-full h-full object-cover opacity-60 grayscale" />
+                    <div class="absolute inset-0 bg-gradient-to-tr from-emerald-900/60 to-transparent"></div>
+                </div>
+                <!-- Trust Badge -->
+                <div class="absolute -bottom-6 -left-6 glass-card p-6 flex items-center gap-4 shadow-2xl">
+                    <div
+                        class="w-12 h-12 bg-emerald-900/10 rounded-full flex items-center justify-center text-emerald-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="font-bold text-slate-900">100% Sécurisé</p>
+                        <p class="text-sm text-slate-500">Agréé par l'ACAPS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-slate-50">
+        <div class="container mx-auto px-4 text-center mb-16">
+            <h2 class="text-4xl lg:text-5xl font-bold text-slate-900 mb-4">Nos Solutions d'Assurance</h2>
+            <p class="text-slate-600 max-w-2xl mx-auto text-lg">Découvrez une large gamme de produits adaptés à votre
+                vie quotidienne et à votre activité professionnelle.</p>
+        </div>
+        <div class="container mx-auto px-4 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div onclick="window.location.href='auto.html'"
+                class="bg-white p-10 rounded-3xl border border-slate-100 hover:shadow-2xl transition-all hover:-translate-y-2 group cursor-pointer">
+                <div
+                    class="text-emerald-900 mb-8 w-16 h-16 bg-emerald-50 rounded-2xl flex items-center justify-center group-hover:bg-emerald-900 group-hover:text-white transition-all">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-1.1 0-2 .9-2 2v7h2" />
+                        <circle cx="7" cy="17" r="2" />
+                        <path d="M9 17h6" />
+                        <circle cx="17" cy="17" r="2" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-3">Auto</h3>
+                <p class="text-slate-500 mb-6">La protection optimale pour vous et votre véhicule sur toutes les routes
+                    du Royaume.</p>
+                <div class="text-emerald-900 font-bold flex items-center gap-2">
+                    En savoir plus <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="m9 18 6-6-6-6" />
+                    </svg>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='habitation.html'"
+                class="bg-white p-10 rounded-3xl border border-slate-100 hover:shadow-2xl transition-all hover:-translate-y-2 group cursor-pointer">
+                <div
+                    class="text-emerald-900 mb-8 w-16 h-16 bg-emerald-50 rounded-2xl flex items-center justify-center group-hover:bg-emerald-900 group-hover:text-white transition-all">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                        <polyline points="9 22 9 12 15 12 15 22" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-3">Habitation</h3>
+                <p class="text-slate-500 mb-6">Protégez votre foyer contre tous les imprévus avec nos garanties
+                    multirisques.</p>
+                <div class="text-emerald-900 font-bold flex items-center gap-2">
+                    En savoir plus <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="m9 18 6-6-6-6" />
+                    </svg>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='sante.html'"
+                class="bg-white p-10 rounded-3xl border border-slate-100 hover:shadow-2xl transition-all hover:-translate-y-2 group cursor-pointer">
+                <div
+                    class="text-emerald-900 mb-8 w-16 h-16 bg-emerald-50 rounded-2xl flex items-center justify-center group-hover:bg-emerald-900 group-hover:text-white transition-all">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-3">Santé</h3>
+                <p class="text-slate-500 mb-6">Prenez soin de vous et de vos proches avec une couverture médicale
+                    complète.</p>
+                <div class="text-emerald-900 font-bold flex items-center gap-2">
+                    En savoir plus <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="m9 18 6-6-6-6" />
+                    </svg>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='entreprise.html'"
+                class="bg-white p-10 rounded-3xl border border-slate-100 hover:shadow-2xl transition-all hover:-translate-y-2 group cursor-pointer">
+                <div
+                    class="text-emerald-900 mb-8 w-16 h-16 bg-emerald-50 rounded-2xl flex items-center justify-center group-hover:bg-emerald-900 group-hover:text-white transition-all">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                        <circle cx="9" cy="7" r="4" />
+                        <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                        <circle cx="19" cy="11" r="2" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-3">Entreprise</h3>
+                <p class="text-slate-500 mb-6">Un accompagnement global pour sécuriser votre activité et vos
+                    collaborateurs.</p>
+                <div class="text-emerald-900 font-bold flex items-center gap-2">
+                    En savoir plus <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="m9 18 6-6-6-6" />
+                    </svg>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='voyage.html'"
+                class="bg-white p-10 rounded-3xl border border-slate-100 hover:shadow-2xl transition-all hover:-translate-y-2 group cursor-pointer">
+                <div
+                    class="text-emerald-900 mb-8 w-16 h-16 bg-emerald-50 rounded-2xl flex items-center justify-center group-hover:bg-emerald-900 group-hover:text-white transition-all">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                        <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-3">Voyage</h3>
+                <p class="text-slate-500 mb-6">Partez serein avec nos garanties d'assistance internationale et Visa.</p>
+                <div class="text-emerald-900 font-bold flex items-center gap-2">
+                    En savoir plus <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="m9 18 6-6-6-6" />
+                    </svg>
+                </div>
+            </div>
+
+            <div onclick="window.location.href='prevoyance.html'"
+                class="bg-white p-10 rounded-3xl border border-slate-100 hover:shadow-2xl transition-all hover:-translate-y-2 group cursor-pointer">
+                <div
+                    class="text-emerald-900 mb-8 w-16 h-16 bg-emerald-50 rounded-2xl flex items-center justify-center group-hover:bg-emerald-900 group-hover:text-white transition-all">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-3">Prévoyance</h3>
+                <p class="text-slate-500 mb-6">Garantissez l'avenir de vos proches avec une protection sur mesure.</p>
+                <div class="text-emerald-900 font-bold flex items-center gap-2">
+                    En savoir plus <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="m9 18 6-6-6-6" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Alafafe Promise Section -->
+    <section class="py-24 bg-emerald-900 text-white overflow-hidden relative">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid lg:grid-cols-3 gap-12">
+                <div class="space-y-4">
+                    <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold">Sécurité Maximale</h3>
+                    <p class="text-emerald-100/80 text-lg">Nous collaborons uniquement avec les compagnies les plus
+                        solides du marché pour garantir votre indemnisation.</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold">Accompagnement Local</h3>
+                    <p class="text-emerald-100/80 text-lg">Basés à Casablanca, nous comprenons parfaitement les
+                        spécificités et les défis du terrain marocain.</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2v20" />
+                            <path d="m17 12-5 5-5-5" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold">Gestion Rapide</h3>
+                    <p class="text-emerald-100/80 text-lg">Notre équipe dédiée aux sinistres s'engage à traiter vos
+                        dossiers dans les plus brefs délais.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Abstract Decoration -->
+        <div
+            class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-[600px] h-[600px] bg-white/5 rounded-full blur-3xl">
+        </div>
+    </section>
+
+    <!-- Partners Carousel Section -->
+    <section class="py-16 bg-white border-b border-slate-100">
+        <div class="container mx-auto px-4">
+            <p class="text-center text-slate-600 font-bold tracking-widest uppercase text-sm mb-10">Nos Partenaires de
+                Confiance</p>
+            <div
+                class="flex flex-wrap justify-center items-center gap-12 opacity-70 grayscale hover:grayscale-0 transition-all">
+                <!-- Placeholder partner logos -->
+                <div class="text-2xl font-display font-bold text-slate-600">AXA</div>
+                <div class="text-2xl font-display font-bold text-slate-600">SANLAM</div>
+                <div class="text-2xl font-display font-bold text-slate-600">WAFA</div>
+                <div class="text-2xl font-display font-bold text-slate-600">RMA</div>
+                <div class="text-2xl font-display font-bold text-slate-600">ATLANTA</div>
+                <div class="text-2xl font-display font-bold text-slate-600">MAMDA</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News / Expertise Section -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-4 flex flex-col lg:flex-row justify-between items-end mb-16 gap-6">
+            <div class="max-w-2xl">
+                <h2 class="text-4xl lg:text-5xl font-bold text-slate-900 mb-4">Expertise & Conseils</h2>
+                <p class="text-slate-600 text-lg">Restez informé des dernières actualités de l'assurance et bénéficiez
+                    de nos conseils d'experts.</p>
+            </div>
+            <button
+                class="text-emerald-900 font-bold flex items-center gap-2 border-b-2 border-emerald-900 pb-1 hover:text-emerald-700 transition-colors">
+                Explorer le blog <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m9 18 6-6-6-6" />
+                </svg>
+            </button>
+        </div>
+        <div class="container mx-auto px-4 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="group">
+                <div class="aspect-[16/10] bg-slate-100 rounded-2xl mb-6 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="flex items-center gap-3 text-sm text-slate-400 font-medium mb-3">
+                    <span class="bg-emerald-50 text-emerald-900 px-2 py-0.5 rounded">Conseil</span>
+                    <span>15 Mars 2024</span>
+                </div>
+                <h3 class="text-2xl font-bold mb-3 group-hover:text-emerald-900 transition-colors leading-tight">
+                    Comprendre l'Assurance Multirisque Habitation au Maroc</h3>
+                <p class="text-slate-500">Tout ce que vous devez savoir pour protéger efficacement votre foyer contre
+                    les incendies et dégâts des eaux.</p>
+            </div>
+            <div class="group">
+                <div class="aspect-[16/10] bg-slate-100 rounded-2xl mb-6 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="flex items-center gap-3 text-sm text-slate-400 font-medium mb-3">
+                    <span class="bg-emerald-50 text-emerald-900 px-2 py-0.5 rounded">Entreprise</span>
+                    <span>10 Mars 2024</span>
+                </div>
+                <h3 class="text-2xl font-bold mb-3 group-hover:text-emerald-900 transition-colors leading-tight">RC
+                    Professionnelle : Un bouclier indispensable pour votre PME</h3>
+                <p class="text-slate-500">Pourquoi l'assurance responsabilité civile est cruciale pour la pérennité de
+                    votre activité commerciale au Maroc.</p>
+            </div>
+            <div class="group">
+                <div class="aspect-[16/10] bg-slate-100 rounded-2xl mb-6 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1533558701576-23c65e0272fb?auto=format&fit=crop&q=80&w=800"
+                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="flex items-center gap-3 text-sm text-slate-400 font-medium mb-3">
+                    <span class="bg-emerald-50 text-emerald-900 px-2 py-0.5 rounded">Sinistre</span>
+                    <span>05 Mars 2024</span>
+                </div>
+                <h3 class="text-2xl font-bold mb-3 group-hover:text-emerald-900 transition-colors leading-tight">
+                    Réflexes à avoir lors d'un accident de circulation</h3>
+                <p class="text-slate-500">Un guide pratique étape par étape pour remplir votre constat amiable et
+                    accélérer votre indemnisation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white pt-20 pb-10">
+        <!-- @include footer -->
+    </footer>
+
+    </footer>
+
+</body>
+
+</html>

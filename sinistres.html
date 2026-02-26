@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centre de Sinistres | Déclaration & Assistance 24/7 - Alafafe</title>
+    <meta name="description"
+        content="Un incident ? Alafafe vous accompagne pour votre déclaration de sinistre. Guide étape par étape, documents utiles et assistance d'urgence au Maroc.">
+    <meta name="keywords"
+        content="déclaration sinistre maroc, assistance assurance casablanca, constat amiable auto maroc, aide sinistre alafafe">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: { 900: '#004D3F', 800: '#006B57' },
+                        slate: { 900: '#0F172A', 800: '#1E293B' },
+                        silver: '#E2E8F0',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        h1,
+        h2,
+        h3 {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-slate-900 antialiased">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white border-b border-silver/50 p-4">
+        <!-- @include header -->
+    </header>
+
+    <main>
+        <!-- Emergency Banner -->
+        <section class="bg-red-50 border-b border-red-100 py-6">
+            <div class="container mx-auto px-4 flex items-center gap-4 text-red-800">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                        d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                    <line x1="12" y1="9" x2="12" y2="13" />
+                    <line x1="12" y1="17" x2="12.01" y2="17" />
+                </svg>
+                <p class="font-bold">Vous venez d'avoir un incident ? Appelez immédiatement notre assistance au <span
+                        class="text-xl underline">+212 522 00 00 00</span></p>
+            </div>
+        </section>
+
+        <!-- Claims Hub Title -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-4xl lg:text-5xl font-bold mb-4">Besoin de déclarer un sinistre ?</h1>
+                <p class="text-xl text-slate-500 max-w-2xl mx-auto">Alafafe vous accompagne à chaque étape pour une
+                    résolution rapide et efficace de votre dossier.</p>
+            </div>
+        </section>
+
+        <!-- Steps to Follow -->
+        <section class="py-12">
+            <div class="container mx-auto px-4 grid md:grid-cols-3 gap-8">
+                <div class="p-8 bg-slate-50 rounded-2xl relative overflow-hidden">
+                    <span class="absolute top-4 right-6 text-6xl font-black text-emerald-900/10">1</span>
+                    <h3 class="text-2xl font-bold mb-4">Mise en sécurité</h3>
+                    <p class="text-slate-600">Assurez-vous de votre sécurité et de celle des autres. En cas d'accident
+                        auto, balisez les lieux et portez votre gilet.</p>
+                </div>
+                <div class="p-8 bg-emerald-900 rounded-2xl relative overflow-hidden text-white">
+                    <span class="absolute top-4 right-6 text-6xl font-black text-white/10">2</span>
+                    <h3 class="text-2xl font-bold mb-4">Déclaration Alafafe</h3>
+                    <p class="text-emerald-50">Contactez-nous dans les 5 jours (48h pour un vol). Nous vous guidons
+                        pour remplir le constat ou les documents nécessaires.</p>
+                </div>
+                <div class="p-8 bg-slate-50 rounded-2xl relative overflow-hidden">
+                    <span class="absolute top-4 right-6 text-6xl font-black text-emerald-900/10">3</span>
+                    <h3 class="text-2xl font-bold mb-4">Indemnisation</h3>
+                    <p class="text-slate-600">Après expertise, nous suivons votre dossier auprès de la compagnie pour
+                        garantir un remboursement rapide.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ/Document Checklist -->
+        <section class="py-20 bg-slate-50">
+            <div class="container mx-auto px-4 flex flex-col items-center">
+                <h2 class="text-3xl font-bold mb-12">Documents à préparer</h2>
+                <div class="w-full max-w-2xl space-y-4">
+                    <div class="bg-white p-6 rounded-xl border border-silver/50 flex items-center justify-between">
+                        <span class="font-bold">Constat amiable (Auto)</span>
+                        <span class="text-emerald-900 font-bold">PDF</span>
+                    </div>
+                    <div
+                        class="bg-white p-6 rounded-xl border border-silver/50 flex items-center justify-between opacity-70">
+                        <span class="font-bold">Déclaration de vol</span>
+                        <span class="text-slate-600">À venir</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white pt-20 pb-10">
+        <!-- @include footer -->
+    </footer>
+</body>
+
+</html>

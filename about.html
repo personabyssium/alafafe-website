@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qui Sommes-Nous | Alafafe Assurances Casablanca</title>
+    <meta name="description"
+        content="Découvrez l'histoire d'Alafafe, votre courtier d'assurance de référence à Casablanca. Notre mission : vous conseiller et vous protéger au quotidien.">
+    <meta name="keywords"
+        content="cabinet assurance casablanca, équipe alafafe, courtier conseil maroc, histoire alafafe assurances">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: { 900: '#004D3F', 800: '#006B57' },
+                        slate: { 900: '#0F172A', 800: '#1E293B', 600: '#475569', 500: '#64748B' },
+                        silver: '#E2E8F0',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-slate-900 antialiased">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white border-b border-silver/50 p-4">
+        <!-- @include header -->
+    </header>
+
+
+    <main>
+        <!-- Vision Hero -->
+        <section class="py-24 bg-slate-900 text-white relative overflow-hidden">
+            <div class="container mx-auto px-4 relative z-10 text-center">
+                <h1 class="text-4xl lg:text-7xl font-bold mb-8">Plus qu'un courtier,<br><span
+                        class="text-emerald-400">un partenaire de vie.</span></h1>
+                <p class="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+                    Alafafe est né d'une volonté simple : rendre l'assurance transparente, accessible et humaine pour
+                    chaque foyer et chaque entreprise au Maroc.
+                </p>
+            </div>
+            <div class="absolute inset-0 bg-emerald-900/20 opacity-50 grayscale blend-overlay">
+                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=2000"
+                    class="w-full h-full object-cover opacity-20" alt="Team Spirit">
+            </div>
+        </section>
+
+        <!-- Our Story -->
+        <section class="py-24">
+            <div class="container mx-auto px-4 grid lg:grid-cols-2 gap-20 items-center">
+                <div class="relative">
+                    <div class="aspect-square bg-slate-100 rounded-[3rem] overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=1000"
+                            class="w-full h-full object-cover" alt="Alafafe Values">
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-3xl lg:text-4xl font-bold mb-8">Notre Engagement</h2>
+                    <div class="space-y-8">
+                        <div class="flex gap-6">
+                            <div
+                                class="w-12 h-12 bg-emerald-900/5 rounded-xl flex items-center justify-center text-emerald-900 shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Indépendance</h3>
+                                <p class="text-slate-600">En tant que courtier indépendant, nous négocions pour vous
+                                    auprès de toutes les compagnies afin d'obtenir le meilleur rapport qualité/prix.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <div
+                                class="w-12 h-12 bg-emerald-900/5 rounded-xl flex items-center justify-center text-emerald-900 shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                    <circle cx="9" cy="7" r="4" />
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Proximité</h3>
+                                <p class="text-slate-600">Notre cabinet situé au cœur de Casablanca vous accueille pour
+                                    un conseil personnalisé et une gestion humaine de vos dossiers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats -->
+        <section class="py-24 bg-emerald-900 text-white">
+            <div class="container mx-auto px-4 grid grid-cols-2 lg:grid-cols-4 gap-12 text-center">
+                <div>
+                    <div class="text-4xl lg:text-6xl font-black mb-2 uppercase italic">+5000</div>
+                    <p class="text-emerald-100 font-bold uppercase tracking-widest text-xs">Clients Satisfaits</p>
+                </div>
+                <div>
+                    <div class="text-4xl lg:text-6xl font-black mb-2 uppercase italic">15</div>
+                    <p class="text-emerald-100 font-bold uppercase tracking-widest text-xs">Ans d'Expertise</p>
+                </div>
+                <div>
+                    <div class="text-4xl lg:text-6xl font-black mb-2 uppercase italic">24h</div>
+                    <p class="text-emerald-100 font-bold uppercase tracking-widest text-xs">Temps de Réponse</p>
+                </div>
+                <div>
+                    <div class="text-4xl lg:text-6xl font-black mb-2 uppercase italic">9</div>
+                    <p class="text-emerald-100 font-bold uppercase tracking-widest text-xs">Partenaires Majeurs</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white pt-20 pb-10">
+        <!-- @include footer -->
+    </footer>
+
+</body>
+
+</html>

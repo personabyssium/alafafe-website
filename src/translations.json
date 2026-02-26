@@ -1,0 +1,30 @@
+{
+    "fr": {
+        "nav_home": "Accueil",
+        "nav_partic": "Particuliers",
+        "nav_corp": "Entreprise",
+        "nav_sinistre": "Sinistres",
+        "nav_about": "À Propos",
+        "nav_contact": "Contact",
+        "btn_emergency": "Urgence Sinistre",
+        "footer_desc": "Cabinet de courtage d'assurance agréé par l'ACAPS, nous mettons notre expertise au service de votre sécurité et de celle de vos biens.",
+        "footer_partic_title": "Particuliers",
+        "footer_corp_title": "Entreprises",
+        "footer_contact_title": "Contact Direct",
+        "copyright": "© 2024 Alafafe Courtage. Tous droits réservés."
+    },
+    "ar": {
+        "nav_home": "الرئيسية",
+        "nav_partic": "الأفراد",
+        "nav_corp": "المقاولات",
+        "nav_sinistre": "الحوادث",
+        "nav_about": "من نحن",
+        "nav_contact": "اتصل بنا",
+        "btn_emergency": "طوارئ الحوادث",
+        "footer_desc": "مكتب وساطة تأمين معتمد من طرف ACAPS، نضع خبرتنا في خدمة أمنكم وسلامة ممتلكاتكم.",
+        "footer_partic_title": "الأفراد",
+        "footer_corp_title": "المقاولات",
+        "footer_contact_title": "الاتصال المباشر",
+        "copyright": "© 2024 Alafefe Courtage. جميع الحقوق محفوظة."
+    }
+}
