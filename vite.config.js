@@ -7,6 +7,7 @@ import path from 'node:path'
 const htmlPartials = () => {
     return {
         name: 'html-partials',
+        enforce: 'pre',
         transformIndexHtml(html) {
             return html.replace(/<!--\s*@include\s+([\w-/]+)\s*-->/g, (match, partialName) => {
                 const partialPath = path.resolve(__dirname, `src/partials/${partialName}.html`)
