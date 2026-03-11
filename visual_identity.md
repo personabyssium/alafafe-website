@@ -37,7 +37,7 @@
 - A solid, minimalist shield icon in **Deep Forest Emerald**.
 - Within the shield, the letter **"A"** is carved out using negative space (Pure White).
 - The shield represents the insurance "protection" layer.
-- Adjacent to or below the shield, the word **ALAFEFE** is set in **Outfit** (Semi-Bold) with generous letter spacing to convey elegance and room to breathe.
+- Adjacent to or below the shield, the word **ALAFAFE** is set in **Outfit** (Semi-Bold) with generous letter spacing to convey elegance and room to breathe.
 
 **Symbolism:**
 - **The Shield:** Universal symbol of protection and peace of mind.

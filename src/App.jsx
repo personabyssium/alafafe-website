@@ -22,7 +22,7 @@ function App() {
                         <div className="w-10 h-10 bg-emerald-900 rounded-lg flex items-center justify-center text-white">
                             <Shield size={24} />
                         </div>
-                        <span className="text-2xl font-display font-bold text-emerald-900 tracking-tight">ALAFEFE</span>
+                        <span className="text-2xl font-display font-bold text-emerald-900 tracking-tight">ALAFAFE</span>
                     </div>
 
                     <nav className="hidden lg:flex items-center gap-8 font-medium">
