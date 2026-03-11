@@ -203,12 +203,13 @@
                 </div>
                 <div class="bg-emerald-900 p-12 rounded-3xl text-white">
                     <h3 class="text-2xl font-bold mb-6">Contactez un Expert Pro</h3>
-                    <form class="space-y-4">
-                        <input type="text" placeholder="Nom de l'entreprise"
+                    <form name="entreprise" method="POST" data-netlify="true" class="space-y-4">
+                        <input type="hidden" name="form-name" value="entreprise">
+                        <input type="text" name="entreprise" placeholder="Nom de l'entreprise"
                             class="w-full bg-white/10 border border-white/20 rounded-xl p-4 outline-none focus:border-white transition-all text-white placeholder:text-white/50">
-                        <input type="email" placeholder="Email professionnel"
+                        <input type="email" name="email" placeholder="Email professionnel"
                             class="w-full bg-white/10 border border-white/20 rounded-xl p-4 outline-none focus:border-white transition-all text-white placeholder:text-white/50">
-                        <textarea placeholder="Votre besoin (Audit, Flotte, Santé...)"
+                        <textarea name="besoin" placeholder="Votre besoin (Audit, Flotte, Santé...)"
                             class="w-full bg-white/10 border border-white/20 rounded-xl p-4 outline-none focus:border-white transition-all text-white placeholder:text-white/50 h-32"></textarea>
                         <button
                             class="w-full bg-white text-emerald-900 font-bold py-4 rounded-xl hover:bg-slate-100 transition-all">Envoyer

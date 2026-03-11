@@ -127,18 +127,19 @@
 
                 <div class="bg-slate-50 p-10 rounded-[2.5rem] border border-silver/50">
                     <h3 class="text-2xl font-bold mb-6">Demander une étude RC Pro</h3>
-                    <form class="space-y-4">
+                    <form name="rc-pro" method="POST" data-netlify="true" class="space-y-4">
+                        <input type="hidden" name="form-name" value="rc-pro">
                         <div class="grid md:grid-cols-2 gap-4">
-                            <input type="text" placeholder="Raison Sociale"
+                            <input type="text" name="raison_sociale" placeholder="Raison Sociale"
                                 class="w-full bg-white border border-silver/50 rounded-xl p-4 outline-none focus:border-emerald-900 transition-all">
-                            <input type="text" placeholder="Secteur d'activité"
+                            <input type="text" name="secteur" placeholder="Secteur d'activité"
                                 class="w-full bg-white border border-silver/50 rounded-xl p-4 outline-none focus:border-emerald-900 transition-all">
                         </div>
-                        <input type="email" placeholder="Email Contact"
+                        <input type="email" name="email" placeholder="Email Contact"
                             class="w-full bg-white border border-silver/50 rounded-xl p-4 outline-none focus:border-emerald-900 transition-all">
-                        <input type="tel" placeholder="Téléphone"
+                        <input type="tel" name="telephone" placeholder="Téléphone"
                             class="w-full bg-white border border-silver/50 rounded-xl p-4 outline-none focus:border-emerald-900 transition-all">
-                        <textarea placeholder="Décrivez brièvement vos besoins..."
+                        <textarea name="besoins" placeholder="Décrivez brièvement vos besoins..."
                             class="w-full bg-white border border-silver/50 rounded-xl p-4 outline-none focus:border-emerald-900 transition-all h-32"></textarea>
                         <button
                             class="w-full bg-emerald-900 text-white font-bold py-4 rounded-xl hover:bg-emerald-800 transition-all">Envoyer
