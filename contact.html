@@ -55,8 +55,8 @@
         <!-- Contact Hero -->
         <section class="py-16 lg:py-24 bg-slate-900 text-white relative overflow-hidden">
             <div class="container mx-auto px-4 relative z-10 text-center">
-                <h1 class="text-4xl lg:text-6xl font-bold mb-6">Parlons de votre protection</h1>
-                <p class="text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
+                <h1 class="text-4xl lg:text-6xl font-bold mb-6" data-i18n="contact_title">Parlons de votre protection</h1>
+                <p class="text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed" data-i18n="contact_subtitle">
                     Nos experts vous accueillent dans nos bureaux à Tanger ou vous répondent à distance pour toutes
                     vos demandes.
                 </p>
@@ -71,38 +71,38 @@
                     <!-- Contact Form -->
                     <div
                         class="bg-white p-8 lg:p-12 rounded-[2.5rem] shadow-2xl border border-silver/50 -mt-32 relative z-20">
-                        <h2 class="text-3xl font-bold mb-8">Envoyez-nous un message</h2>
+                        <h2 class="text-3xl font-bold mb-8" data-i18n="contact_form_title">Envoyez-nous un message</h2>
                         <form name="contact" method="POST" data-netlify="true" class="space-y-6">
                             <input type="hidden" name="form-name" value="contact">
                             <div class="grid md:grid-cols-2 gap-6">
                                 <div class="space-y-2">
-                                    <label class="text-sm font-bold text-slate-500 ml-1">Nom complet</label>
+                                    <label class="text-sm font-bold text-slate-500 ml-1" data-i18n="contact_label_name">Nom complet</label>
                                     <input type="text" name="nom" placeholder="Ex: Karim Benani"
                                         class="w-full bg-slate-50 border border-silver/50 rounded-2xl p-4 outline-none focus:border-emerald-900 transition-all">
                                 </div>
                                 <div class="space-y-2">
-                                    <label class="text-sm font-bold text-slate-500 ml-1">Téléphone</label>
+                                    <label class="text-sm font-bold text-slate-500 ml-1" data-i18n="contact_label_phone">Téléphone</label>
                                     <input type="tel" name="telephone" placeholder="Ex: 06 00 00 00 00"
                                         class="w-full bg-slate-50 border border-silver/50 rounded-2xl p-4 outline-none focus:border-emerald-900 transition-all">
                                 </div>
                             </div>
                             <div class="space-y-2">
-                                <label class="text-sm font-bold text-slate-500 ml-1">Sujet</label>
+                                <label class="text-sm font-bold text-slate-500 ml-1" data-i18n="contact_label_subject">Sujet</label>
                                 <select name="sujet"
                                     class="w-full bg-slate-50 border border-silver/50 rounded-2xl p-4 outline-none focus:border-emerald-900 transition-all appearance-none cursor-pointer">
-                                    <option>Demande de devis</option>
-                                    <option>Question sur un contrat</option>
-                                    <option>Déclaration de sinistre</option>
-                                    <option>Autre demande</option>
+                                    <option data-i18n="contact_opt1">Demande de devis</option>
+                                    <option data-i18n="contact_opt2">Question sur un contrat</option>
+                                    <option data-i18n="contact_opt3">Déclaration de sinistre</option>
+                                    <option data-i18n="contact_opt4">Autre demande</option>
                                 </select>
                             </div>
                             <div class="space-y-2">
-                                <label class="text-sm font-bold text-slate-500 ml-1">Message</label>
+                                <label class="text-sm font-bold text-slate-500 ml-1" data-i18n="contact_label_msg">Message</label>
                                 <textarea name="message" rows="5" placeholder="Comment pouvons-nous vous aider ?"
                                     class="w-full bg-slate-50 border border-silver/50 rounded-2xl p-4 outline-none focus:border-emerald-900 transition-all resize-none"></textarea>
                             </div>
                             <button
-                                class="w-full bg-emerald-900 text-white font-bold py-5 rounded-2xl hover:bg-emerald-800 transition-all shadow-xl shadow-emerald-900/10">Envoyer
+                                class="w-full bg-emerald-900 text-white font-bold py-5 rounded-2xl hover:bg-emerald-800 transition-all shadow-xl shadow-emerald-900/10" data-i18n="contact_btn">Envoyer
                                 le message</button>
                         </form>
                     </div>
@@ -111,7 +111,7 @@
                     <div class="lg:pt-12">
                         <div class="space-y-12">
                             <div>
-                                <h3 class="text-2xl font-bold mb-6">Coordonnées</h3>
+                                <h3 class="text-2xl font-bold mb-6" data-i18n="contact_coords_title">Coordonnées</h3>
                                 <div class="space-y-6">
                                     <div class="flex gap-6 items-start">
                                         <div
@@ -124,7 +124,7 @@
                                             </svg>
                                         </div>
                                         <div>
-                                            <p class="font-bold mb-1">Téléphone</p>
+                                            <p class="font-bold mb-1" data-i18n="contact_phone_label">Téléphone</p>
                                             <p class="text-slate-600 text-lg">+212 (0) 5 22 99 88 77</p>
                                         </div>
                                     </div>
@@ -139,7 +139,7 @@
                                             </svg>
                                         </div>
                                         <div>
-                                            <p class="font-bold mb-1">Email</p>
+                                            <p class="font-bold mb-1" data-i18n="contact_email_label">Email</p>
                                             <p class="text-slate-600 text-lg">contact@alafafe.ma</p>
                                         </div>
                                     </div>
@@ -154,7 +154,7 @@
                                             </svg>
                                         </div>
                                         <div>
-                                            <p class="font-bold mb-1">Adresse</p>
+                                            <p class="font-bold mb-1" data-i18n="contact_address_label">Adresse</p>
                                             <p class="text-slate-600 text-lg">Tanger, Maroc</p>
                                         </div>
                                     </div>
@@ -162,19 +162,19 @@
                             </div>
 
                             <div class="p-8 bg-emerald-900 rounded-3xl text-white">
-                                <h3 class="text-xl font-bold mb-4">Horaires d'ouverture</h3>
+                                <h3 class="text-xl font-bold mb-4" data-i18n="contact_hours_title">Horaires d'ouverture</h3>
                                 <div class="space-y-3 opacity-90 text-sm">
                                     <div class="flex justify-between border-b border-white/10 pb-2">
-                                        <span>Lundi - Vendredi</span>
+                                        <span data-i18n="contact_mon_fri">Lundi - Vendredi</span>
                                         <span>08:30 - 18:00</span>
                                     </div>
                                     <div class="flex justify-between border-b border-white/10 pb-2">
-                                        <span>Samedi</span>
+                                        <span data-i18n="contact_sat">Samedi</span>
                                         <span>09:00 - 12:30</span>
                                     </div>
                                     <div class="flex justify-between">
-                                        <span>Dimanche</span>
-                                        <span class="font-bold">Fermé</span>
+                                        <span data-i18n="contact_sun">Dimanche</span>
+                                        <span class="font-bold" data-i18n="contact_closed">Fermé</span>
                                     </div>
                                 </div>
                             </div>
@@ -197,7 +197,7 @@
                         </svg>
                     </div>
                     <div>
-                        <p class="font-bold">Cabinet Alafafe</p>
+                        <p class="font-bold" data-i18n="contact_map_name">Cabinet Alafafe</p>
                         <p class="text-xs text-slate-500">Tanger, Maroc</p>
                     </div>
                 </div>

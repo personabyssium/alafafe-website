@@ -71,6 +71,14 @@ function initI18n() {
                 el.innerText = translations[lang][key];
             }
         });
+
+        // Translate elements with [data-i18n-html] (supports inner HTML like <strong>)
+        document.querySelectorAll('[data-i18n-html]').forEach(el => {
+            const key = el.getAttribute('data-i18n-html');
+            if (translations[lang][key]) {
+                el.innerHTML = translations[lang][key];
+            }
+        });
     };
 
     langFrBtns.forEach(btn => btn.addEventListener('click', () => updateLang('fr')));
