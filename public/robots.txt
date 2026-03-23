@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://alafafe.com/sitemap.xml

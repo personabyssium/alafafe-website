@@ -4,19 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alafafe Assurances | Courtage & Conseil en Assurances au Maroc</title>
+    <title>Courtier Assurance Maroc | Alafafe Assurances Tanger</title>
     <meta name="description"
-        content="Alafafe, votre courtier d'assurance de confiance à Tanger. Solutions sur mesure pour particuliers et entreprises : Auto, Habitation, Santé et Risques Pro. Proximité et réactivité garanties.">
+        content="Courtier assurance à Tanger : Auto, Habitation, Santé, Entreprise. Devis gratuit en 24h. Alafafe, votre expert local agréé ACAPS.">
     <meta name="keywords"
-        content="assurance maroc, courtier assurance casablanca, assurance auto maroc, alafafe assurance, assurance santé maroc, assurance entreprise maroc">
+        content="courtier assurance maroc, courtier assurance tanger, assurance auto maroc, assurance habitation maroc, assurance entreprise maroc, assurance santé maroc, alafafe assurances">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://alafafe.com/" />
 
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://alafafe.ma/">
-    <meta property="og:title" content="Alafafe Assurances | Expertise & Conseil au Maroc">
+    <meta property="og:url" content="https://alafafe.com/">
+    <meta property="og:title" content="Courtier Assurance Maroc | Alafafe Assurances Tanger">
     <meta property="og:description"
-        content="Découvrez nos solutions d'assurance innovantes et bénéficiez d'un accompagnement personnalisé par nos experts à Tanger.">
-    <meta property="og:image" content="https://alafafe.ma/og-image.jpg">
+        content="Courtier assurance à Tanger : Auto, Habitation, Santé, Entreprise. Devis gratuit en 24h. Alafafe, votre expert local agréé ACAPS.">
+    <meta property="og:image" content="https://alafafe.com/og-image.jpg">
+    <meta property="og:locale" content="fr_MA">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Courtier Assurance Maroc | Alafafe Assurances Tanger">
+    <meta name="twitter:description" content="Courtier assurance à Tanger : Auto, Habitation, Santé, Entreprise. Devis gratuit en 24h. Alafafe, votre expert local agréé ACAPS.">
+
+    <!-- Schema JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": ["InsuranceAgency", "LocalBusiness"],
+          "@id": "https://alafafe.com/#business",
+          "name": "Alafafe Assurances",
+          "url": "https://alafafe.com",
+          "description": "Cabinet de courtage d'assurance agréé ACAPS à Tanger, spécialiste des solutions pour particuliers et entreprises au Maroc.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Tanger",
+            "addressRegion": "Tanger-Tétouan-Al Hoceïma",
+            "addressCountry": "MA"
+          },
+          "telephone": "+212-522-000000",
+          "email": "contact@alafafe.ma",
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+              "opens": "09:00",
+              "closes": "18:00"
+            }
+          ],
+          "sameAs": [
+            "https://facebook.com/AlafafeAssurances",
+            "https://instagram.com/AlafafeAssurances"
+          ],
+          "areaServed": { "@type": "Country", "name": "Maroc" }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://alafafe.com/#website",
+          "url": "https://alafafe.com",
+          "name": "Alafafe Assurances",
+          "inLanguage": ["fr", "ar"],
+          "publisher": { "@id": "https://alafafe.com/#business" }
+        }
+      ]
+    }
+    </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link
@@ -86,7 +138,7 @@
         <div class="container mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
             <div>
                 <h1 class="text-5xl lg:text-7xl font-bold text-slate-900 leading-tight mb-6">
-                    <span data-i18n="hero_title">Votre Partenaire en</span> <br><span class="text-emerald-900" data-i18n="hero_highlight">Confiance & Protection</span>
+                    <span data-i18n="hero_title">Courtier d'Assurance à Tanger</span> <br><span class="text-emerald-900" data-i18n="hero_highlight">Solutions pour Particuliers et Entreprises</span>
                 </h1>
                 <p class="text-xl text-slate-600 mb-8 max-w-lg leading-relaxed" data-i18n="hero_subtitle">
                     Alafafe vous accompagne avec des solutions d'assurance sur mesure, pensées pour les besoins uniques
@@ -331,13 +383,11 @@
             <div
                 class="flex flex-wrap justify-center items-center gap-12 opacity-70 grayscale hover:grayscale-0 transition-all">
                 <!-- Partner logos -->
-                <div class="h-12"><img src="./src/images/partners/MAI.png" alt="MAI" class="h-full w-auto"></div>
-                <div class="h-12"><img src="./src/images/partners/sanlam-logo.png" alt="Sanlam" class="h-full w-auto">
-                </div>
-                <div class="h-12"><img src="./src/images/partners/wafa.png" alt="Wafa" class="h-full w-auto"></div>
-                <div class="h-12"><img src="./src/images/partners/logo-CAT-Assurance.png" alt="CAT Assurance"
-                        class="h-full w-auto"></div>
-                <div class="h-12"><img src="./src/images/partners/Sanad.png" alt="Sanad" class="h-full w-auto"></div>
+                <div class="h-12"><img src="./src/images/partners/MAI.png" alt="MAI Assurances — partenaire Alafafe Maroc" loading="lazy" class="h-full w-auto"></div>
+                <div class="h-12"><img src="./src/images/partners/sanlam-logo.png" alt="Sanlam Maroc — partenaire assurance Alafafe" loading="lazy" class="h-full w-auto"></div>
+                <div class="h-12"><img src="./src/images/partners/wafa.png" alt="Wafa Assurance — partenaire courtier Alafafe" loading="lazy" class="h-full w-auto"></div>
+                <div class="h-12"><img src="./src/images/partners/logo-CAT-Assurance.png" alt="CAT Assurance Maroc — partenaire Alafafe" loading="lazy" class="h-full w-auto"></div>
+                <div class="h-12"><img src="./src/images/partners/Sanad.png" alt="Sanad Assurance — partenaire Alafafe Tanger" loading="lazy" class="h-full w-auto"></div>
             </div>
         </div>
     </section>
@@ -362,6 +412,8 @@
             <div class="group">
                 <div class="aspect-[16/10] bg-slate-100 rounded-2xl mb-6 overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=800"
+                        alt="Assurance multirisque habitation au Maroc — conseil courtier Alafafe Tanger"
+                        loading="lazy"
                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
                 <div class="flex items-center gap-3 text-sm text-slate-400 font-medium mb-3">
@@ -376,6 +428,8 @@
             <div class="group">
                 <div class="aspect-[16/10] bg-slate-100 rounded-2xl mb-6 overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800"
+                        alt="RC Professionnelle PME Maroc — responsabilité civile entreprise Alafafe"
+                        loading="lazy"
                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
                 <div class="flex items-center gap-3 text-sm text-slate-400 font-medium mb-3">
@@ -390,6 +444,8 @@
             <div class="group">
                 <div class="aspect-[16/10] bg-slate-100 rounded-2xl mb-6 overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1533558701576-23c65e0272fb?auto=format&fit=crop&q=80&w=800"
+                        alt="Déclaration sinistre accident circulation au Maroc — guide constat amiable Alafafe"
+                        loading="lazy"
                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                 </div>
                 <div class="flex items-center gap-3 text-sm text-slate-400 font-medium mb-3">
