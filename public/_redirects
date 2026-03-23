@@ -1,0 +1,2 @@
+# www → non-www (301)
+https://www.alafafe.com/*  https://alafafe.com/:splat  301!
