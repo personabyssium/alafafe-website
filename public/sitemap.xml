@@ -7,91 +7,85 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://alafafe.com/particuliers.html</loc>
+    <loc>https://alafafe.com/particuliers</loc>
     <lastmod>2026-03-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://alafafe.com/entreprise.html</loc>
+    <loc>https://alafafe.com/entreprise</loc>
     <lastmod>2026-03-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://alafafe.com/auto.html</loc>
+    <loc>https://alafafe.com/auto</loc>
     <lastmod>2026-03-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alafafe.com/habitation.html</loc>
+    <loc>https://alafafe.com/habitation</loc>
     <lastmod>2026-03-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alafafe.com/sante.html</loc>
+    <loc>https://alafafe.com/sante</loc>
     <lastmod>2026-03-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://alafafe.com/entreprise.html</loc>
-    <lastmod>2026-03-23</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://alafafe.com/voyage.html</loc>
+    <loc>https://alafafe.com/voyage</loc>
     <lastmod>2026-03-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alafafe.com/prevoyance.html</loc>
+    <loc>https://alafafe.com/prevoyance</loc>
     <lastmod>2026-03-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alafafe.com/rc-pro.html</loc>
+    <loc>https://alafafe.com/rc-pro</loc>
     <lastmod>2026-03-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alafafe.com/flotte-auto.html</loc>
+    <loc>https://alafafe.com/flotte-auto</loc>
     <lastmod>2026-03-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alafafe.com/sante-collective.html</loc>
+    <loc>https://alafafe.com/sante-collective</loc>
     <lastmod>2026-03-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://alafafe.com/sinistres.html</loc>
+    <loc>https://alafafe.com/sinistres</loc>
     <lastmod>2026-03-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://alafafe.com/about.html</loc>
+    <loc>https://alafafe.com/about</loc>
     <lastmod>2026-03-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://alafafe.com/contact.html</loc>
+    <loc>https://alafafe.com/contact</loc>
     <lastmod>2026-03-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://alafafe.com/mentions-legales.html</loc>
+    <loc>https://alafafe.com/mentions-legales</loc>
     <lastmod>2026-03-23</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>

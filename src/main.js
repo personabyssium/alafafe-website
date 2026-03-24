@@ -17,15 +17,16 @@ document.addEventListener('DOMContentLoaded', () => {
  * Highlights the active navigation link based on the current URL
  */
 function initNavigation() {
-    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+    // Normalize path: strip .html and leading slash so both /auto and /auto.html match
+    const rawSegment = window.location.pathname.split('/').pop().replace(/\.html$/, '') || 'index';
     const navLinks = document.querySelectorAll('nav a[data-nav]');
+    const particularsPages = ['auto', 'habitation', 'sante', 'voyage', 'prevoyance', 'particuliers'];
 
     navLinks.forEach(link => {
-        const page = link.getAttribute('href');
+        const page = (link.getAttribute('href') || '').replace(/\.html$/, '').replace(/^\//, '');
         const isPartic = link.getAttribute('data-nav') === 'particuliers';
 
-        // Match specific pages or categories
-        if (page === currentPath || (isPartic && ['auto.html', 'habitation.html', 'sante.html', 'voyage.html', 'prevoyance.html', 'particuliers.html'].includes(currentPath))) {
+        if (page === rawSegment || (isPartic && particularsPages.includes(rawSegment))) {
             link.classList.add('text-emerald-900', 'underline', 'decoration-2', 'underline-offset-8');
             link.classList.remove('hover:text-emerald-900');
         }

@@ -9,6 +9,85 @@
   status = 301
   force  = true
 
+# Remove .html extension for clean, crawlable URLs (301 permanent)
+[[redirects]]
+  from = "/auto.html"
+  to   = "/auto"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/habitation.html"
+  to   = "/habitation"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/sante.html"
+  to   = "/sante"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/voyage.html"
+  to   = "/voyage"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/prevoyance.html"
+  to   = "/prevoyance"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/particuliers.html"
+  to   = "/particuliers"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/entreprise.html"
+  to   = "/entreprise"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/rc-pro.html"
+  to   = "/rc-pro"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/flotte-auto.html"
+  to   = "/flotte-auto"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/sante-collective.html"
+  to   = "/sante-collective"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/sinistres.html"
+  to   = "/sinistres"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/about.html"
+  to   = "/about"
+  status = 301
+  force  = true
+
+[[redirects]]
+  from = "/contact.html"
+  to   = "/contact"
+  status = 301
+  force  = true
+
 # Security & performance headers (all pages)
 [[headers]]
   for = "/*"

@@ -22,11 +22,43 @@ const htmlPartials = () => {
     }
 }
 
+// Vite strips <link rel="canonical"> during build — this plugin re-injects them
+const pageCanonicals = {
+    'index.html': '/',
+    'auto.html': '/auto',
+    'habitation.html': '/habitation',
+    'sante.html': '/sante',
+    'voyage.html': '/voyage',
+    'prevoyance.html': '/prevoyance',
+    'particuliers.html': '/particuliers',
+    'entreprise.html': '/entreprise',
+    'rc-pro.html': '/rc-pro',
+    'flotte-auto.html': '/flotte-auto',
+    'sante-collective.html': '/sante-collective',
+    'sinistres.html': '/sinistres',
+    'about.html': '/about',
+    'contact.html': '/contact',
+}
+
+const injectCanonical = () => ({
+    name: 'inject-canonical',
+    enforce: 'post',
+    transformIndexHtml(html, ctx) {
+        const filename = path.basename(ctx.filename)
+        const canonicalPath = pageCanonicals[filename]
+        if (!canonicalPath) return
+        const tags = `  <link rel="canonical" href="https://alafafe.com${canonicalPath}" />\n` +
+                     `  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />\n`
+        return html.replace('</head>', tags + '</head>')
+    }
+})
+
 // https://vitejs.dev/config/
 export default defineConfig({
     plugins: [
         react(),
-        htmlPartials()
+        htmlPartials(),
+        injectCanonical()
     ],
     build: {
         rollupOptions: {
