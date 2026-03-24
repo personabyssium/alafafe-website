@@ -156,7 +156,7 @@
                                         </div>
                                         <div>
                                             <p class="font-bold mb-1" data-i18n="contact_address_label">Adresse</p>
-                                            <p class="text-slate-600 text-lg">Résidence la Rencontre E, Rue Caadi Ayad, 1er étage n°457, Tanger</p>
+                                            <p class="text-slate-600 text-lg">Résidence la Rencontre E, Rue Cadi Ayad, 1er étage n°457, Tanger</p>
                                         </div>
                                     </div>
                                 </div>
@@ -185,24 +185,16 @@
             </div>
         </section>
 
-        <!-- Interactive Map (Placeholder Image) -->
-        <section class="h-[500px] w-full bg-slate-100 relative overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&q=80&w=2000"
-                class="w-full h-full object-cover grayscale opacity-50" alt="Tanger Map">
-            <div class="absolute inset-0 flex items-center justify-center">
-                <div class="bg-white p-6 rounded-2xl shadow-2xl flex items-center gap-4">
-                    <div class="w-10 h-10 bg-emerald-900 rounded-full flex items-center justify-center text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
-                        </svg>
-                    </div>
-                    <div>
-                        <p class="font-bold" data-i18n="contact_map_name">Cabinet Alafafe</p>
-                        <p class="text-xs text-slate-500">Résidence la Rencontre E, Rue Caadi Ayad, Tanger</p>
-                    </div>
-                </div>
-            </div>
+        <!-- Interactive Map -->
+        <section class="h-[500px] w-full relative overflow-hidden">
+            <iframe
+                src="https://maps.google.com/maps?q=R%C3%A9sidence+la+Rencontre+E%2C+Rue+Cadi+Ayad%2C+Tanger%2C+Maroc&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                class="w-full h-full border-0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Localisation Cabinet Alafafe — Résidence la Rencontre E, Rue Cadi Ayad, Tanger">
+            </iframe>
         </section>
     </main>
 
