@@ -47,8 +47,12 @@ const injectCanonical = () => ({
         const filename = path.basename(ctx.filename)
         const canonicalPath = pageCanonicals[filename]
         if (!canonicalPath) return
-        const tags = `  <link rel="canonical" href="https://alafafe.com${canonicalPath}" />\n` +
-                     `  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />\n`
+        const url = `https://alafafe.com${canonicalPath}`
+        const tags = `  <link rel="canonical" href="${url}" />\n` +
+                     `  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />\n` +
+                     `  <link rel="alternate" hreflang="fr" href="${url}" />\n` +
+                     `  <link rel="alternate" hreflang="ar" href="${url}" />\n` +
+                     `  <link rel="alternate" hreflang="x-default" href="${url}" />\n`
         return html.replace('</head>', tags + '</head>')
     }
 })
